@@ -29,5 +29,5 @@ download.file(dataset_url, "diet_data.zip")
 unzip("diet_data.zip", exdir = "diet_data")
 
 weightmedian_better(directory = "diet_data", day = 20)
-weightmedian_better("diet_data", 6)
+weightmedian_better("diet_data", 7)
 weightmedian_better("diet_data", 17)
