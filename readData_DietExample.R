@@ -31,3 +31,33 @@ unzip("diet_data.zip", exdir = "diet_data")
 weightmedian_better(directory = "diet_data", day = 20)
 weightmedian_better("diet_data", 7)
 weightmedian_better("diet_data", 17)
+
+
+make.power <- function(n){
+  pow <- function(x) {
+    x^n
+    
+  }
+  pow
+}
+# usage
+
+# cube <-make.power(3)
+# square <- make.power(2)
+
+# cube(3)
+# square(3)
+
+ls(environment(cube))
+# [1] "n"   "pow"
+get("n",environment(cube))
+# [1] 3
+
+f <- function(x){
+  y <- 2
+  y^2 + g(x)
+}
+
+g <- function(x){
+  x*y
+}
